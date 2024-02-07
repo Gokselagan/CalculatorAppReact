@@ -1,0 +1,15 @@
+.input {
+    height: 20vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 16px;
+    color: #fff;
+}
+
+
+.text {
+    font-size: 55px;
+    font-weight: 300;
+}
