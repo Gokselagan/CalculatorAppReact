@@ -1,8 +1,7 @@
 import * as math from "mathjs";
 
 import { Button } from './Compononets/Button/button';
-import { Input } from './Compononets/Input/input';
-import './App.css';
+import { Input } from './Compononets/Input';
 import { useState } from 'react';
 
 export const App = () => {
@@ -37,34 +36,34 @@ export const App = () => {
   }
 
   return (
-    <div className="app">
-      <div className='calc-wrapper'>
+    <div className="flex justify-center items-center h-screen">
+      <div className='bg-black w-96 rounded-2xl'>
         <Input text={text} result={result} />
-        <div className='calc-row'>
+        <div className='flex'>
           <Button value={"AC"} bgColor={"#A5A5A5"} color={"#000"} handleClick={clear} />
           <Button value={"+/-"} bgColor={"#A5A5A5"} color={"#000"} handleClick={toggleSign} />
           <Button value={"%"} bgColor={"#A5A5A5"} color={"#000"} handleClick={addText} />
           <Button value={"/"} bgColor={"#F3930A"} handleClick={addText} />
         </div>
-        <div className='calc-row'>
+        <div className='flex'>
           <Button value={7} handleClick={addText} />
           <Button value={8} handleClick={addText} />
           <Button value={9} handleClick={addText} />
           <Button value={"*"} bgColor={"#F3930A"} handleClick={addText} />
         </div>
-        <div className='calc-row'>
+        <div className='flex'>
           <Button value={4} handleClick={addText} />
           <Button value={5} handleClick={addText} />
           <Button value={6} handleClick={addText} />
           <Button value={"-"} bgColor={"#F3930A"} handleClick={addText} />
         </div>
-        <div className='calc-row'>
+        <div className='flex'>
           <Button value={1} handleClick={addText} />
           <Button value={2} handleClick={addText} />
           <Button value={3} handleClick={addText} />
           <Button value={"+"} bgColor={"#F3930A"} handleClick={addText} />
         </div>
-        <div className='calc-row'>
+        <div className='flex'>
           <Button value={0} handleClick={addText} />
           <Button value={"."} handleClick={addText} />
           <Button value={"="} bgColor={"#F3930A"} handleClick={calculate} />
