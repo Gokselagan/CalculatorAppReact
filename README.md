@@ -18,6 +18,7 @@ React
 math.js (for mathematical evaluation)
 HTML
 CSS
+Tailwind CSS
 
 
 Components
